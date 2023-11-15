@@ -134,11 +134,12 @@
 		<div class="login_box">
 			<div class="left">
 				<div class="contact">
-					<form action="">
+					<form action="/afterlogin" method="post">
+            @csrf
 						<h3>SIGN IN</h3>
-						<input type="text" placeholder="USERNAME">
-						<input type="password" placeholder="PASSWORD">
-						<button class="submit">LOGIN</button>
+						<input type="text" id="username" name="username" placeholder="USERNAME">
+						<input type="password" id="password" name="password" placeholder="PASSWORD">
+						<button type="submit" class="submit">LOGIN</button>
 					</form>
 				</div>
 			</div>

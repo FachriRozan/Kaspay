@@ -33,7 +33,7 @@
     >
         <div class="min-h-screen text-gray-900 bg-gray-100 dark:bg-dark-eval-0 dark:text-gray-200">
             <!-- Sidebar -->
-            <x-sidebar.sidebar />
+            <x-sidebar.sidebaradmin />
 
             <!-- Page Wrapper -->
             <div
@@ -46,7 +46,7 @@
             >
 
                 <!-- Navbar -->
-                <x-navbar />
+                <x-navbaradmin />
 
                 <!-- Page Heading -->
                 <header>

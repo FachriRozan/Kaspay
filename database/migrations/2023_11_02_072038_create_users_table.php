@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+            
         Schema::create('user', function (Blueprint $table) {
             $table->string('npm')->primary(); // Menggunakan kolom 'npm' sebagai primary key
             $table->string('nama');
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('user');
     }
 };

@@ -57,7 +57,7 @@
                 <button
                     class="flex items-center p-2 text-sm font-medium text-gray-500 rounded-md transition duration-150 ease-in-out hover:text-gray-700 focus:outline-none focus:ring focus:ring-purple-500 focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark-eval-1 dark:text-gray-400 dark:hover:text-gray-200"
                 >
-                    <div>User</div>
+                    <div>Admin</div>
 
                     <div class="ml-1">
                         <svg
@@ -86,6 +86,7 @@
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout1') }}">
                     @csrf
+
                     <x-dropdown-link
                         :href="route('logout1')"
                         onclick="event.preventDefault(); this.closest('form').submit();"
